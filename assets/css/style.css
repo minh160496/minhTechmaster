@@ -110,6 +110,7 @@ html {
 body {
   line-height: 1;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 ol,
 ul {
@@ -148,6 +149,10 @@ a {
   grid-template-columns: 2fr 10fr;
 }
 
+.grid.l-8-4 {
+  grid-template-columns: 8fr 4fr;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -175,11 +180,12 @@ a {
   background-color: rgb(163, 0, 5);
   font-size: 1.3rem;
   color: #757575;
+  transition: 0.4s;
 }
 
 .main__banner {
   max-inline-size: 1280px;
-  min-block-size: 285px;
+  min-block-size: 289px;
   margin: 0 auto;
   position: relative;
 }
@@ -197,7 +203,7 @@ a {
 }
 
 li a {
-  padding: 9px 8px;
+  padding: 7.5px 8px;
 }
 
 .level1__title > i,
@@ -206,8 +212,8 @@ li a {
 }
 
 li a span {
-  line-height: 1.3rem;
-  max-height: 1.3rem;
+  line-height: 1.5rem;
+  max-height: 1.5rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -273,6 +279,15 @@ li a span {
   inline-size: 100%;
 }
 
+ul {
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.footer__my-name {
+  animation: fadeout 10s;
+  color: #ccc;
+}
 /* phuc vu js slide */
 @keyframes fadeout {
   from {
@@ -284,7 +299,7 @@ li a span {
 }
 
 .fades {
-  animation: fadeout 0.3s;
+  animation: fadeout 0.4s;
 }
 
 .active {

@@ -27,7 +27,7 @@ function slideFade() {
   slides[slideIndex].style.display = "block"; //slide duy nhat hien thi
   main.style.backgroundColor = arrBackground[slideIndex];
   for (var i = 0; i < dots.length; i++) {
-    dots[i].style.color = "#777"; //tat ca cac dot co mau xam
+    dots[i].style.color = "#ddd"; //tat ca cac dot co mau xam
   }
   dots[slideIndex].style.color = "#fff"; //dot co vi tri cung slide co mau trang
   slideIndex++;
